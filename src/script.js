@@ -12,9 +12,8 @@ const completionTimeDisplay = document.getElementById('completion-time');
 let puzzlePieces = [];
 let gridSize = parseInt(difficultySelect.value);
 let images = [
-    'nico.jpg',
-    'chisato.jpg',
-    'lapwing.jpg'
+    SakurajimaMai.jpg
+    annayanami.webp
 ];
 let currentImageIndex = 0;
 let timerInterval;
