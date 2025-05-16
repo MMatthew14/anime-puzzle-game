@@ -8,15 +8,14 @@ const timerDisplay = document.querySelector('.timer');
 const successMessage = document.querySelector('.success-message');
 const completionTimeDisplay = document.getElementById('completion-time');
 
-// Game Variables
+// Game variables
 let puzzlePieces = [];
 let gridSize = parseInt(difficultySelect.value);
 let images = [
-    SakurajimaMai.jpg,
-    annayanami.webp,
-
-]
-
+    'nico.jpg',
+    'chisato.jpg',
+    'lapwing.jpg'
+];
 let currentImageIndex = 0;
 let timerInterval;
 let seconds = 0;
@@ -96,7 +95,7 @@ function createPuzzlePieces() {
 
                 // Add event listeners for dragging
                 piece.addEventListener('mousedown', startDrag);
-                piece.addEventListener('touchstart', startDrag, {passive: false});
+                piece.addEventListener('touchstart', startDrag, { passive: false });
 
                 puzzlePieces.push(piece);
             }
@@ -133,7 +132,7 @@ function startDrag(e) {
 
     // Add the move events for dragging
     document.addEventListener('mousemove', moveDrag);
-    document.addEventListener('touchmove', moveDrag, {passive: false});
+    document.addEventListener('touchmove', moveDrag, { passive: false });
 
     // Add the end events for dropping
     document.addEventListener('mouseup', endDrag);
