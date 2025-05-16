@@ -1,18 +1,19 @@
 // DOM Elements
-const puzzleContainer = document.querySelector ('.puzzle-container')
-const puzzleGrid = document.querySelector ('.puzzle-grid')
-const difficultySelect = document.querySelector ('.difficulty')
-const startButton = document.querySelector ('.start-game')
-const showOriginalButton = document.querySelector ('.show-original')
-const timerDisplay = document.QuerySelector ('.timer')
-const successMessage = document.QuerySelector ('.success-message')
-const completionTimeDisplay = document.QuerySelector ('.completion-time')
+const puzzleContainer = document.querySelector('.puzzle-container');
+const puzzleGrid = document.querySelector('.puzzle-grid');
+const difficultySelect = document.getElementById('difficulty');
+const startButton = document.getElementById('start-game');
+const showOriginalButton = document.getElementById('show-original');
+const timerDisplay = document.querySelector('.timer');
+const successMessage = document.querySelector('.success-message');
+const completionTimeDisplay = document.getElementById('completion-time');
 
 // Game Variables
 let puzzlePieces = [];
 let gridSize = parseInt(difficultySelect.value);
 let images = [
-    SakurajimaMai.jpg
+    SakurajimaMai.jpg,
+    annayanami.webp,
 
 ]
 
@@ -95,7 +96,7 @@ function createPuzzlePieces() {
 
                 // Add event listeners for dragging
                 piece.addEventListener('mousedown', startDrag);
-                piece.addEventListener('touchstart', startDrag, { passive: false });
+                piece.addEventListener('touchstart', startDrag, {passive: false});
 
                 puzzlePieces.push(piece);
             }
@@ -132,7 +133,7 @@ function startDrag(e) {
 
     // Add the move events for dragging
     document.addEventListener('mousemove', moveDrag);
-    document.addEventListener('touchmove', moveDrag, { passive: false });
+    document.addEventListener('touchmove', moveDrag, {passive: false});
 
     // Add the end events for dropping
     document.addEventListener('mouseup', endDrag);
