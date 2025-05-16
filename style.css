@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: greenyellow;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #094af5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px ;
+    width: 100%;
+    max-width: 700px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ee0af6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #e09714;
+}
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 17px
+}
+
+.timer {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.puzzle-container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 2px solid #222;
+    background-color: #e5e5e5;
+    touch-action: none;
+}
+
+.puzzle-piece{
+    position: absolute;
+    cursor: grab;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    user-select: none;
+    transition: box-shadow 0.3s;
+}
+
+.puzzle-piece:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.puzzle-piece.dragging {
+    z-index: 100;
+    cursor: grabbing;
+    box-shadow: 0 0 5px rgba(0,0,0,0.8);
+}
+
+.puzzle-piece.placed {
+    box-shadow: none;
+}
+
+.puzzle-grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: grid;
+    pointer-events: none;
+}
+
+.success-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #e09714;
+    pointer-events: none;
+}
+
+@media (max-width: 650px) {
+    .puzzle-container {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+h1 {
+    font-size: 24px;
+}
+
+button {
+    padding: 8px 13px;
+    font-size: 16px;
+}
+
+select {
+    padding: 8px;
+    font-size: 14px
+}
+
+@media (max-width: 450px) {
+    .puzzle-container {
+        width: 300px;
+        height: 300px;
+    }
+}
+h1 {
+    font-size: 20px;
+}
