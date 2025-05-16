@@ -12,7 +12,7 @@ const completionTimeDisplay = document.getElementById('completion-time');
 let puzzlePieces = [];
 let gridSize = parseInt(difficultySelect.value);
 let images = [
-    SakurajimaMai.jpg
+    SakurajimaMai.jpg,
     annayanami.webp
 ];
 let currentImageIndex = 0;
