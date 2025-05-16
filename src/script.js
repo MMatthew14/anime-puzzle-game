@@ -15,7 +15,7 @@ let images = [
     'annayanami.webp',
     'SakurajimaMai.jpg',
     'kaguyashinomiya.jpg',
-    'nonoamiyamae.jpg;',
+    'nonoamiyamae.jpg',
 
 ];
 let currentImageIndex = 0;
