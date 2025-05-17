@@ -16,7 +16,12 @@ let images = [
     'SakurajimaMai.jpg',
     'kaguyashinomiya.jpg',
     'nonoamiyamae.jpg',
-
+    'gotohitori.jpg',
+    'IkuyoKita.webp',
+    'kaorukowaguri.jpg',
+    'nanakusanazuna.jpg',
+    'OblivionisTogawaSakiko.jpg_large',
+    'MomoAyase.webp'
 ];
 let currentImageIndex = 0;
 let timerInterval;
