@@ -21,7 +21,9 @@ let images = [
     'kaorukowaguri.jpg',
     'nanakusanazuna.jpg',
     'OblivionisTogawaSakiko.jpg_large',
-    'MomoAyase.webp'
+    'MomoAyase.webp',
+    'Banri_Shiunji.webp',
+    'Kotono_Shiunji.jpeg'
 ];
 let currentImageIndex = 0;
 let timerInterval;
