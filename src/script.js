@@ -23,7 +23,15 @@ let images = [
     'OblivionisTogawaSakiko.jpg_large',
     'MomoAyase.webp',
     'Banri_Shiunji.webp',
-    'Kotono_Shiunji.jpeg'
+    'Kotono_Shiunji.jpeg',
+    'JeanneAlter.webp',
+    'ChizuruMizuhara.webp',
+    'nanamimami.jpg ',
+    'maomao.jpg',
+    'kousakareina.jpg',
+    'chisatonishikigi.jpg',
+    'kotegawachisa.jpg',
+    'zerotwo.jpg'
 ];
 let currentImageIndex = 0;
 let timerInterval;
