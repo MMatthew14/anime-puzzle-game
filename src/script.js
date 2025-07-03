@@ -31,7 +31,18 @@ let images = [
     'kousakareina.jpg',
     'chisatonishikigi.jpg',
     'kotegawachisa.jpg',
-    'zerotwo.jpg'
+    'zerotwo.jpg',
+    'alisamikhailovnakujou.jpg',
+    'altair.jpg',
+    'shiinamahiru.jpg',
+    'almajudikhali.webp',
+    'takinainoue.jpg',
+    'rihotsukishima.jpg',
+    'makuzawaouka.jpg',
+    'akanehououji.jpg',
+    'shiragikuono.jpg',
+    'amitsuruga.jpg',
+    'osanaiyuki.jpg'
 ];
 let currentImageIndex = 0;
 let timerInterval;
